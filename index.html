@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +7,43 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Welcome to Mironova.io</h1>
-        </header>
-        <main>
-            <img src="images/kitten.gif" alt="Котёнок с голубыми глазами" class="kitten-image">
-            <p>Мой сайт в разработке. Совсем скоро вы сможете полюбоваться моими проектами! </p>
-        </main>
-    </div>
+    <nav class="nav">
+        <a href="/" class="logo">Mironova.io</a>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <img src="images/kitten.gif" alt="Котёнок с голубыми глазами" class="hero-image">
+            <h1>Привет, меня зовут Mironova</h1>
+            <p class="lead">Мой сайт в разработке. Совсем скоро вы сможете полюбоваться моими проектами!</p>
+        </section>
+
+        <section class="featured" id="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>Проект 1</h3>
+                    <p>Описание первого проекта появится совсем скоро.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Проект 2</h3>
+                    <p>Описание второго проекта появится совсем скоро.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Проект 3</h3>
+                    <p>Описание третьего проекта появится совсем скоро.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Mironova.io</p>
+    </footer>
 </body>
 </html>
